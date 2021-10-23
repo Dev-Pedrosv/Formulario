@@ -1,0 +1,184 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+body{
+  width: 100vw;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    48deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(251, 82, 131, 1) 100%
+  );
+}
+
+.box{
+  display: block;
+  width: 450px;
+  margin: 50px auto; 
+  background-color: rgba(0,0,0,0.6);
+  padding:15px;
+  border-radius: 15px;
+  color:white
+}
+
+fieldset{
+  border:none
+}
+
+legend{
+  font-size:30px;
+  padding: 10px;
+  text-align:center;
+  background-color:transparent;
+  border-radius: 8px;
+
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.inputBox{
+  position: relative;
+}
+
+.inputUser{
+  background:none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline:none;
+  color:white;
+  font-size: 22px;
+  width: 100%;
+  letter-spacing: 2px
+
+}
+.labelInput{
+  font-size:22px;
+
+}
+
+.genero{
+  font-size:22px;
+}
+.labelInput{
+  position:absolute;
+  top:0px;
+  left: 0px;
+  pointer-events:none;
+  transition: .5s;
+  
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+  top:-20px;
+  font-size:16px;
+  color:dodgerblue;
+}
+
+#data_nascimento{
+  border:none;
+  background-color: rgba(0,0,0,0.6);
+  color:white;
+  padding:8px;
+  border-radius:10px;
+  outline:none;
+  font-size:22px
+}
+
+#submit{
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    48deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(251, 82, 131, 1) 100%
+  );
+  width: 50%;
+  border:none;
+  padding:15px;
+  color:white;
+  font-size:22px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 25%;
+  transition: .5s ease-in-out;
+
+
+}
+
+#submit:hover{
+  width: 70%;
+  margin-left:15%;
+
+
+}
+
+#submit:active{
+  opacity: 0.6;
+
+
+}
+
+
+@media(max-width: 760px){
+
+  
+.box{
+  margin:0;
+  border-radius: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  color:white;
+  align-items: center;
+  overflow-y: auto;
+
+
+}
+
+legend{
+  font-size:30px
+}
+
+.labelInput{
+  margin-left: 10px;
+  font-size:22px
+}
+
+.inputUser{
+  margin-left: 10px;
+  background:none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline:none;
+  color:white;
+  font-size: 22px;
+  width: 95%;
+  letter-spacing: 2px
+
+}
+
+.genero{
+  margin-left: 10px;
+  font-size:22px
+}
+#data_nascimento{
+  border:none;
+  padding:8px;
+  border-radius:10px;
+  outline:none;
+  font-size:22px
+}
+
+#submit{
+
+  font-size:22px;
+  width:50%;
+  margin-left: 25%;
+  
+}
+}
